@@ -9,7 +9,7 @@
         "password": "String",
         "latitude": "Number",
         "longitude": "Number",
-        "dogs": [{"dog_id": "UUID", "dog_name": "String"}]
+        "dogs": [{"dog_id": "UUID", "dog_name": "String", "profile_img": "String"}]
     },
     "Dogs": {
         "_id": "UUID",
@@ -27,6 +27,6 @@
         "_id": "UUID",
         "id_dog_matched_1": "UUID",
         "id_dog_matched_2": "UUID",
-        "conversation": [{"from":"String","id_from": "UUID","msg": "String","data_send":"Blob","date_send": "Date"}]
+        "conversation": { "conversation_id": "UUID" }
     }
 }
