@@ -1,0 +1,32 @@
+{
+    "User" : {
+        "_id": "UUID",
+        "name": "String",
+        "phone": "String",
+        "mobile_phone": "String",
+        "email": "String",
+        "username": "String",
+        "password": "String",
+        "latitude": "Number",
+        "longitude": "Number",
+        "dogs": [{"dog_id": "UUID", "dog_name": "String"}]
+    },
+    "Dogs": {
+        "_id": "UUID",
+        "owner_id": "UUID",
+        "owner_name": "String",
+        "name": "String",
+        "age": "Number",
+        "breed": "String",
+        "purebreed": "Bool",
+        "color": "String",
+        "query": { "age":"String","foo": "foo", "max_kms": "Number" },
+        "likes": [{ "dog_like_id": "UUID","dog_name": "String", "owner_id": "UUID","owner_name": "String" }]
+    },
+    "Match" : {
+        "_id": "UUID",
+        "id_dog_matched_1": "UUID",
+        "id_dog_matched_2": "UUID",
+        "conversation": [{"from":"String","id_from": "UUID","msg": "String","data_send":"Blob","date_send": "Date"}]
+    }
+}
