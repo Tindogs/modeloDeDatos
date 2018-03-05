@@ -1,7 +1,8 @@
 {
     "User" : {
         "_id": "UUID",
-        "name": "String",
+        "first_name": "String",
+        "last_name": "String",
         "phone": "String",
         "mobile_phone": "String",
         "email": "String",
