@@ -24,13 +24,12 @@
         }]
     },
     "Match" : {
-        "_id": "UUID",
         "id_dog_matched_1": "UUID",
         "name_dog_matched_1": "String",
         "img_dog_matched_1": "String",
         "id_dog_matched_2": "UUID",
         "name_dog_matched_2": "String",
         "img_dog_matched_2": "String",
-        "conversation": { "conversation_id": "UUID" }
+        "conversation": "UUID"
     }
 }
