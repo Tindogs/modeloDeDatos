@@ -10,26 +10,20 @@
         "password": "String",
         "coordinates": ["Number","Number"],
         "dogs": [{
-            "owner_id": "UUID",
-            "owner_name": "String",
             "name": "String",
             "age": "Number",
             "breed": "String",
             "purebreed": "Bool",
             "color": "String",
-            "query": { "age":"String", "max_kms": "Number", "reproductive": "Boolean", "breed": "String" },
-            "likes_from_others": [{ "dog_like_id": "UUID","dog_name": "String", "owner_id": "UUID","owner_name": "String" }],
+            "query": { "age":"String", "max_kms": "Number", "reproductive": "Boolean", "breed": "String", "purebreed": "Bool" },
+            "likes_from_others": [{ "dog_like_id": "UUID", "owner_id": "UUID" }],
             "description": "String",
             "photos": ["String"]
         }]
     },
     "Match" : {
         "id_dog_matched_1": "UUID",
-        "name_dog_matched_1": "String",
-        "img_dog_matched_1": "String",
         "id_dog_matched_2": "UUID",
-        "name_dog_matched_2": "String",
-        "img_dog_matched_2": "String",
         "conversation": "UUID"
     }
 }
