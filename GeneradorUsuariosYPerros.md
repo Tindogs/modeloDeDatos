@@ -20,6 +20,7 @@
             owner_id: function (tags) {
              return (this._id);
            },
+          dog_id:  '{{objectId()}}',
           name:'{{firstName()}}',
           age:  '{{integer(0, 20)}}',
           breed: '{{random("Affenpinscher","Afghan Hound","Afghan Shepherd","Aidi","Airedale Terrier","Akbash","Akita","Alano Español","Alaskan husky","Alaskan Klee Kai","Alaskan Malamute","Alopekis","Alpine Dachsbracke","American Akita","American Bulldog","American Cocker Spaniel","American English Coonhound","American Eskimo Dog","American Foxhound","American Hairless Terrier")}}',
