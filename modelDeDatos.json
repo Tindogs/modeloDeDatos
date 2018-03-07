@@ -24,7 +24,9 @@
     },
     "Match" : {
         "id_dog_matched_1": "UUID",
+        "id_owner_dog_mached_1": "UUID",
         "id_dog_matched_2": "UUID",
+        "id_owner_dog_mached_2": "UUID",
         "conversation": "UUID"
     }
 }
