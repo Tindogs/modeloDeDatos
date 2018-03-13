@@ -3,15 +3,11 @@
         "_id": "UUID",
         "first_name": "String",
         "last_name": "String",
-        "phone": "String",
-        "mobile_phone": "String",
         "email": "String",
         "username": "String",
         "password": "String",
         "coordinates": ["Number","Number"],
         "dogs": [{
-            "owner_id": "UUID",
-            "owner_name": "String",
             "name": "String",
             "age": "Number",
             "breed": "String",
@@ -23,7 +19,28 @@
             "photos": ["String"]
         }]
     },
-    "Match" : {
+    /*Versión nueva 1*/
+    "Match3" : {
+        "dogs": [{"id_dog_matched": "UUID",
+            "name_dog_matched": "String",
+            "img_dog_matched": "String"},
+            {"id_dog_matched": "UUID",
+                "name_dog_matched": "String",
+                "img_dog_matched": "String"}],
+        "conversation" : "UUID"
+    },
+    /*Versión nueva 2*/
+    "Match2" : {
+        "dog_1" : {"id_dog_matched": "UUID",
+            "name_dog_matched": "String",
+            "img_dog_matched": "String"},
+        "dog_2" : {"id_dog_matched": "UUID",
+            "name_dog_matched": "String",
+            "img_dog_matched": "String"},
+        "conversation" : "UUID"
+    },
+    /*Versión vieja*/
+    "Match1" : {
         "id_dog_matched_1": "UUID",
         "name_dog_matched_1": "String",
         "img_dog_matched_1": "String",
