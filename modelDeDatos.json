@@ -3,25 +3,31 @@
         "_id": "UUID",
         "first_name": "String",
         "last_name": "String",
-        "phone": "String",
-        "mobile_phone": "String",
         "email": "String",
         "username": "String",
         "password": "String",
         "coordinates": ["Number","Number"],
         "dogs": [{
-            "owner_id": "UUID",
             "owner_name": "String",
             "name": "String",
             "age": "Number",
             "breed": "String",
             "purebreed": "Bool",
             "color": "String",
-            "query": { "age":"String", "max_kms": "Number", "reproductive": "Boolean", "breed": "String" },
+            "query": { "age":"String", "max_kms": "Number","reproductive": "Boolean", "breed": "String" },
             "likes_from_others": [{ "dog_like_id": "UUID","dog_name": "String", "owner_id": "UUID","owner_name": "String" }],
             "description": "String",
             "photos": ["String"]
         }]
+    },
+    "Match" : {
+        "dogs": [{"id_dog_matched": "UUID",
+            "name_dog_matched": "String",
+            "img_dog_matched": "String"},
+            {"id_dog_matched": "UUID",
+                "name_dog_matched": "String",
+                "img_dog_matched": "String"}],
+        "conversation" : "UUID"
     },
     "Match" : {
         "id_dog_matched_1": "UUID",
