@@ -7,6 +7,7 @@
         "username": "String",
         "password": "String",
         "coordinates": ["Number","Number"],
+        "photo": "String",
         "dogs": [{
             "name": "String",
             "age": "Number",
